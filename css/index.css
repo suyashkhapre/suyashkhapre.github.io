@@ -2752,3 +2752,24 @@ for tabs and large phones
         transition: all .4s ease;
     }
 }
+
+.note {
+    text-align: center;
+    font-family: raleway;
+    margin: 20px;
+}
+
+.color-note {
+    color: #c70039;
+    transition: all .4s ease;
+    font-weight: bold;
+}
+
+
+/* additional changes */
+
+
+/* typewriter note for responsive start*/
+
+
+/* typewriter note for responsive */
