@@ -2496,7 +2496,7 @@ for tabs and large phones
         font-weight: 200;
     }
     .cv a button {
-        background: transparent;
+        /* background: transparent; */
         border: none;
         padding: 25px 35px;
         color: whitesmoke;
