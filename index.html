@@ -14,11 +14,13 @@
     <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
     <!--main css file-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Bungee+Outline&family=Island+Moments&family=Londrina+Outline&family=Mrs+Saint+Delafield&family=Playfair+Display:ital@0;1&family=Rubik+Glitch&family=Spline+Sans&family=Tilt+Prism&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -346,7 +348,11 @@
 
             </div>
             <div id="portfolio-content">
-                <span class="note"><span class="color-note"> NOTE : </span>"Currenly, the websites are not responsive, but our team is working on it. Thank you for your patience."</span>
+                <div class="scrolling-text-container">
+                    <div class="scrolling-text">
+                        <span class="note"><span class="color-note"> NOTE : </span>"Currenly, the websites are not responsive, but our team is working on it. Thank you for your patience."</span>
+                    </div>
+                </div>
                 <div class="portfolio portfolio-first">
                     <div class="portfolio-image">
                         <img src="images/myntra.jpg" alt="portfolio-first">
@@ -403,7 +409,23 @@
                         <div class="button"><a href="business/HTML/index.html"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class=" portfolio-image">
+                        <img src="javascript/images/calci.jpg" alt="portfolio-fifth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Calculator Website</h2>
+                        <p>My calculator website is a user-friendly online tool for performing mathematical calculations. It enables users to perform basic arithmetic operations, as well as more complex functions like trigonometry and exponents. The website's
+                            interface is intuitive, making it simple for users to input their calculations and view the results. Overall, My calculator website is designed to make math easier and more accessible for anyone who needs to perform calculations
+                            quickly and accurately.</p>
+                        <div class="button"><a href="javascript/calci/index.html"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
             </div>
+
+
+
+
 
             <div class="footer">
                 <div class="footer-text">
@@ -446,50 +468,12 @@
                 </div>
             </div>
             <div class="blog-header"> Blogs</span>
-                <span class="header-caption"> My Latest <span class="color"> blog posts.</span></span>
+                <span class="header-caption"> Things I am  <span class="color"> Passionate</span> about.</span>
             </div>
             <div class="blog-content">
-                <!-- <div class="blogs">
-                    <a href="#">
-                        <div class="img">
-                            <img src="images/post-one.jpg" alt="blog-one">
-                            <div class="blog-date">8 May,20</div>
-                        </div>
-                        <div class="blog-text">
-                            <h3>Harleys In Hawaai</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae illum, corrupti quo veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum provident? Magnam fugiat voluptas
-                                libero.
-                            </p>
-                        </div>
-                    </a>
-                </div> -->
-                <!-- <div class="blogs">
-                    <a href="#">
-                        <div class="img">
-                            <img src="images/post-two.jpg" alt="blog-two">
-                            <div class="blog-date">16 Jan,20</div>
-                        </div>
-                        <div class="blog-text">
-                            <h3>Key To Be Productive</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores, recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda harum dolorum iusto tenetur eius eligendi dolor magnam sit!</p>
-                        </div>
-                    </a>
-                </div> -->
-                <!-- <div class="blogs">
-                    <a href="#">
-                        <div class="img">
-                            <img src="images/post-three.jpg" alt="blog-three">
-                            <div class="blog-date">30 Nov,19</div>
-                        </div>
-                        <div class="blog-text">
-                            <h3>Caffeine Addict</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum quas. Officiis dolorem asperiores, ut necessitatibus
-                                quas doloremque?</p>
-                        </div>
-                    </a>
-                </div> -->
+
                 <div class="blogs">
-                    <a href="#">
+                    <a href="blog/index.html">
                         <div class="img">
                             <img src="images/post-four.jpg" alt="blog-four">
                             <div class="blog-date">6 Jul,19</div>
@@ -512,18 +496,7 @@
                         </div>
                     </a>
                 </div>
-                <!-- <div class="blogs">
-                    <a href="#">
-                        <div class="img">
-                            <img src="images/post-six.jpg" alt="blog-six">
-                            <div class="blog-date">28 Feb,19</div>
-                        </div>
-                        <div class="blog-text">
-                            <h3>Business Trip</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga ratione, unde, ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut rerum nam.</p>
-                        </div>
-                    </a>
-                </div> -->
+
             </div>
 
             <div class="footer">
@@ -754,6 +727,10 @@
             },
             "retina_detect": true
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

@@ -1,0 +1,350 @@
+body {
+    background: #101010;
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    color: #c70039;
+    transition: all .4s ease;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c70039;
+    border-radius: 4px;
+    width: 4px;
+    transition: all .4s ease;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #101010;
+    border-radius: 4px;
+    width: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.blog-head {
+    background-image: url(../blog/images/wevdeve.jpeg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.head {
+    height: 100vh;
+}
+
+.blog-head {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 10px;
+    position: relative;
+    top: 100px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 10px 15px 0px black;
+}
+
+.blog__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__title button {
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 150px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.blog__title button:hover {
+    background-color: white;
+    color: black;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.blog-img img {
+    height: 200px;
+}
+
+.vl {
+    border-left: 5px solid white;
+    height: 80px;
+    margin: 0px 20px 0px 70px;
+}
+
+.blog-content p::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.blog-content img {
+    height: 300px;
+    width: auto;
+}
+
+.blog-content p {
+    width: 50%;
+    word-spacing: 10px;
+    line-height: 30px;
+}
+
+.blog-content {
+    text-transform: uppercase;
+    color: white;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100dvh;
+}
+
+#navigation-content {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #020202;
+    transform: translateY(-200%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation-bar {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 3;
+    padding: 10px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.menubar {
+    position: absolute;
+    right: 4%;
+    top: 40%;
+    cursor: pointer;
+    opacity: .8;
+    transition: all .4s ease;
+}
+
+.menubar span {
+    position: relative;
+    background-color: transparent;
+    height: 2px;
+    width: 20px;
+    display: block;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+.menubar .first-span {
+    width: 35px;
+}
+
+.menubar .first-span::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    transition: all .5s ease;
+}
+
+.menubar .second-span {
+    width: 35px;
+}
+
+.menubar .second-span::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    transition: all .3s ease;
+}
+
+.menubar .third-span {
+    width: 35px;
+}
+
+.menubar .third-span::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    transition: all .3s ease;
+}
+
+.menubar:hover .second-span::before,
+.menubar:hover .first-span::before {
+    width: 100%;
+}
+
+.menubar:hover {
+    opacity: 1;
+}
+
+.close-first,
+.close-second {
+    height: 2px;
+    width: 35px;
+    background-color: whitesmoke;
+    display: block;
+    margin: 4px;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 20px;
+}
+
+.close-first {
+    transform: rotate(45deg);
+}
+
+.close-second {
+    transform: rotate(-45deg);
+}
+
+.navigation-close {
+    position: absolute;
+    top: 6%;
+    right: 4%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all.3s ease;
+    opacity: .8;
+}
+
+.navigation-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+.logo img {
+    height: 70px;
+    position: absolute;
+    top: 3%;
+    left: 2.5%;
+    opacity: .8;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.logo img:hover {
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+#navigation-bar img {
+    height: 80px;
+    position: absolute;
+    ;
+    top: 15%;
+    left: 2.5%;
+    opacity: .8;
+    transition: all .4s ease;
+}
+
+#navigation-bar img:hover {
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+.navigation-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: poppins;
+}
+
+.navigation-links a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    opacity: .7;
+    transition: all .4s ease;
+}
+
+.navigation-links a:hover {
+    opacity: 1;
+}
+
+.navigation-links a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    font-size: 5em;
+    font-weight: 400;
+    font-family: monoton;
+    color: rgb(255, 255, 255, .1);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 100px;
+    transition: all .4s ease;
+}
+
+.navigation-links a:hover::before {
+    content: attr(data-text);
+    opacity: 1;
+    letter-spacing: 10px;
+}
+
+.blog-info p {
+    width: 100%;
+}
+
+.blog-info li {
+    line-height: 30px;
+}
+
+.quote p {
+    margin: auto;
+    width: 50%;
+    font-style: italic;
+    font-size: 12px;
+}

@@ -2699,6 +2699,18 @@ for tabs and large phones
         font-family: poppins;
         font-size: 18px;
     }
+    .input-name:hover,
+    .input-subject:hover,
+    .input-textarea:hover {
+        transition: 1s;
+        -webkit-box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
+        -moz-box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.5);
+        -webkit-transition: ;
+        -moz-transition: ;
+        -ms-transition: ;
+        -o-transition: ;
+    }
     .form-header {
         font-size: 24px;
         font-family: poppins;
@@ -2760,6 +2772,36 @@ for tabs and large phones
 
 
 /* additional changes */
+
+.scrolling-text-container {
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.scrolling-text {
+    display: block;
+    white-space: nowrap;
+    animation: scrolling-text 15s linear infinite;
+    -webkit-animation: scrolling-text 15s linear infinite;
+}
+
+@keyframes scrolling-text {
+    0% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+}
 
 
 /* typewriter note for responsive start*/
